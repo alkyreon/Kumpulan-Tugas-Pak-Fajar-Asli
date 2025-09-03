@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autobiografi Ardiansyah</title>
+    <style>
+        body{
+            margin: 0;
+            text-align: center;
+            background-image: url(Wallpapaer.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+        }
+        .first{
+            width: 380px;
+            align-items: center;
+            -webkit-box-reflect: below 0px linear-gradient(to bottom, transparent, rgba(0,0,0,0.2));
+        }
+        .gg{
+            object-fit: cover;
+            border-radius: 40px;
+        }
+        .gg:hover{
+            transform: scale(1.2);
+            transition: all 0.2s ease;
+            box-shadow: 1px 2px 10px 6px rgb(255, 0, 0);
+        }
+        .gog{
+            object-fit: cover;
+            border-radius: 40px;
+        }
+        .gog:hover{
+            transform: scale(1.2);
+            transition: all 0.2s ease;
+            box-shadow: 1px 2px 10px 6px blue;
+        }
+        .second{
+            width: 300px;
+            height: 100px;
+        }
+        .ardi{
+            border-radius: 80%;
+            animation: zoom 2s infinite ease-in-out;
+            animation: putar 6s infinite;
+        }
+        @keyframes putar{
+            0%{
+                rotate: 360deg;
+            }
+            10%{
+                rotate: 360deg;
+            }
+            20%{
+                rotate: 288deg;
+            }
+            40%{
+                rotate: 216deg;
+            }
+            60%{
+                rotate: 144deg;
+            }
+            80%{
+                rotate: 72deg;
+            }
+            100%{
+                rotate: 0deg;
+            }
+        }
+        @keyframes zoom{
+            0%{
+                transform: scale(0.6);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            }
+            25%{
+                transform: scale(0.7);
+                box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+            50%{
+                transform: scale(0.8);
+                box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.3);
+            }
+            75%{
+                transform: scale(0.9);
+                box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1);
+            }
+            100%{
+                transform: scale(1);
+                box-shadow: 0 0 0 40px rgba(255, 255, 255, 0);
+            }
+        }
+        .tabel{
+            margin-top: 40px;
+        }
+        .nama{
+        display: inline-block;
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px #000000, 0 0 15px #000000;
+        }
+        .gra{
+            object-fit: cover;
+            border-radius: 40px;
+        }
+        .gra:hover{
+            transform: scale(1.2);
+            transition: all 0.2s ease;
+            box-shadow: 1px 2px 10px 6px rgb(178, 0, 178);
+        }
+        .gam{
+            object-fit: cover;
+            border-radius: 40px;  
+        }
+        .gam:hover{
+            transform: scale(1.2);
+            transition: all 0.2s ease;
+            box-shadow: 1px 2px 10px 6px rgb(173, 173, 173);
+        }
+        .deskripsi{
+            font-family: 'Times New Roman';
+            font-size: 18px;
+        }
+        .keren {
+            animation: ketik 3s linear infinite;
+            display: inline-block;
+            font-size: 24px;
+            text-shadow: 0 0 1px #fff, 0 0 1px #fff;
+        }
+        @keyframes ketik{    
+            0% {
+            text-shadow: 0 0 4px #ff0000, 0 0 4px #eb0000;
+            }
+            20% {
+            text-shadow: 0 0 4px #ffae00, 0 0 4px #ebd400;
+            }
+            40% {
+            text-shadow: 0 0 4px #00ff00, 0 0 4px #00eb00;
+            }   
+            60% {
+            text-shadow: 0 0 4px #00ffff, 0 0 4px #00ebeb;
+            }
+            80% {
+            text-shadow: 0 0 4px #0000ff, 0 0 4px #0000eb;
+            }
+            100% {
+            text-shadow: 0 0 4px #ff00ff, 0 0 4px #eb00eb;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" height="100%" class="tabel">
+        <tr>
+            <td rowspan="3" class="first"><img src="aka1.jpg" alt="Foto Ardiansyah" width="300px" height="100%" class="ardi"></td>
+            <td class="second"><a href="www.youtube.com/@ALKYREON"><img src="youtube.png" alt="Youtube" width="100px" height="100px" class="gg"></a></td>
+            <td class="second"><a href="https://www.facebook.com/share/1FCnybd3ke/"><img src="facebook.png" alt="Facebook" class="gog" height="100px" width="100px"></a></td>
+            <td class="second"><a href="https://www.instagram.com/mohammadrizkyardiansyah2?igsh=eGZ6ZXUzNDM5am5w"><img src="istagram.jpeg" alt="Instagram" class="gra" width="100px" height="100px"></a></td>
+        </tr>
+        <tr>
+            <td><span class="nama">Guru : Alda Mustika</span></td>
+            <td colspan="2"><span class="keren">Mohammad Rizky Ardiansyah</span></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="deskripsi">Halo, nama saya Ardiansyah. Saya siswa kelas 11 jurusan PPLG di SMKN 3 Palu. Saya suka belajar coding, terutama bagian backend dan AI. Di waktu luang, saya juga suka membaca buku, bermain catur, <mark>belajar fisika</mark>, dan melatih fisik agar tetap sehat.</td>
+            <td class="second"><a href="http://github.com/alkyreon"><img src="Github.png" alt="Github" class="gam" height="100px" width="100px"></a></td>
+        </tr>
+    </table>
+</body>
+</html>

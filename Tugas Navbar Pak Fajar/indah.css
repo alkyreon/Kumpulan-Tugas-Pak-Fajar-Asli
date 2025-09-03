@@ -1,0 +1,111 @@
+:root{
+    --warna-pertama: #1565C0;   /* Biru tua */
+    --warna-kedua: #42A5F5;     /* Biru langit */
+    --warna-ketiga: #90CAF9;    /* Biru muda */
+    --warna-keempat: #E3F2FD;   /* Biru pastel */
+    --warna-kelima: #FFD54F;    /* Kuning pastel */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(135deg, var(--warna-ketiga) 0%, var(--warna-keempat) 100%);
+    color: var(--warna-pertama);
+}
+.kepala{
+    background: linear-gradient(90deg, var(--warna-pertama) 70%, var(--warna-kedua) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(21,101,192,0.15);
+}
+.kepala img{
+    border-radius: 40%;
+    border: 3px solid var(--warna-kelima);
+    box-shadow: 0 0 10px rgba(66,165,245,0.3);
+}
+.navigasi ul{
+    list-style-type: none;
+    display: flex;
+}
+.navigasi ul li{
+    position: relative;
+}
+.navigasi ul li a{
+    color: var(--warna-keempat);
+    background: var(--warna-pertama);
+    text-decoration: none;
+    padding: 10px 25px;
+    display: block;
+    border-radius: 20px;
+    margin: 0 5px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.navigasi ul li a:hover{
+    background: var(--warna-kelima);
+    color: var(--warna-pertama);
+    box-shadow: 0 2px 8px rgba(255,213,79,0.3);
+}
+.dropdown:hover .drop-konten{
+    display: block;
+}
+.drop-konten{
+    display: none;
+    position: absolute;
+    box-shadow: 0 8px 16px rgba(227,242,253,0.2);
+    z-index: 1;
+    min-width: 120px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.drop-konten a{
+    color: var(--warna-pertama);
+    background: var(--warna-keempat);
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s, color 0.3s;
+}
+.drop-konten a:hover{
+    background: var(--warna-kelima);
+    color: var(--warna-pertama);
+}
+.utama{
+    padding: 40px 20px 80px 20px;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    margin: 30px auto 0 auto;
+    max-width: 700px;
+    box-shadow: 0 4px 24px rgba(21,101,192,0.08);
+}
+.utama h1{
+    color: var(--warna-pertama);
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 8px var(--warna-keempat);
+}
+.utama p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--warna-pertama);
+    background: var(--warna-keempat);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(227,242,253,0.15);
+    margin-top: 10px;
+}
+.kaki{
+    background: linear-gradient(90deg, var(--warna-pertama) 70%, var(--warna-kedua) 100%);
+    color: var(--warna-keempat);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 8px rgba(21,101,192,0.12);
+}
